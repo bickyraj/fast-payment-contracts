@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.bicky.contracts.orderRequestBody;
+
+message OrderRequestBody {
+  int64 productId = 1;
+  int32 quantity = 2;
+}
