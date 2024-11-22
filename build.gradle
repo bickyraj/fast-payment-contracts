@@ -10,6 +10,7 @@ sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -51,9 +52,9 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
+            groupId = 'com.bicky'  // Change this to your group ID
+            artifactId = 'fast-payment-contracts'  // The name of your artifact
+            version = '1.0.0'  // The version of your package
         }
-    }
-    repositories {
-        mavenLocal()
     }
 }
