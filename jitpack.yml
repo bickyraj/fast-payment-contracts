@@ -1,5 +1,5 @@
 jdk:
-  version: openjdk17
+  - openjdk17
 
 install:
   - ./gradlew clean build  # Your build command here
